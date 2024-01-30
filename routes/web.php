@@ -20,3 +20,8 @@ Route::get('/', function () {
                     'intro'=>$intro,
                 ]);
 });
+
+// se faccio /welcome vado nel file blade welcome e mi visualizza solo quello in pagina 
+Route::get('/welcome', function () {
+    return view('Welcome');
+});
